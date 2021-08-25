@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-   <!--Intruducing Fuker--> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <!--Intruducing your life Fuker mr.cracker--> 
    <title>Mr.Cracker Info Website</title>
 </head>
 <body style="background-repeat: no-repeat;background-size:cover;" background="templates/night.jpg">
@@ -80,6 +81,50 @@
   </div>
 </div>
     
+          <div class="content">
+         <div class="images">
+            <img src="https://telegra.ph/file/dadeaa8140a71108dc9b3.jpg">
+            <img src="https://telegra.ph/file/e88d5914ed5ba287341b4.jpg">
+            <img src="https://telegra.ph/file/00176fb82665d49a61a47.jpg">
+            <img src="https://telegra.ph/file/1a9dcb8a73d8a169095ef.jpg">
+            <img src="https://telegra.ph/file/98da8eaaba0adae86e7f3.jpg">
+         </div>
+         <div class="btm-slides">
+            <span onclick="btm_slide(1)"></span>
+            <span onclick="btm_slide(2)"></span>
+            <span onclick="btm_slide(3)"></span>
+            <span onclick="btm_slide(4)"></span>
+            <span onclick="btm_slide(5)"></span>
+         </div>
+         <div class="sliders left" onclick="side_slide(-1)">
+            <span class="fas fa-angle-left"></span>
+         </div>
+         <div class="sliders right" onclick="side_slide(1)">
+            <span class="fas fa-angle-right"></span>
+         </div>
+      </div>
+      <script>
+         var indexValue = 1;
+         showImg(indexValue);
+         function btm_slide(e){showImg(indexValue = e);}
+         function side_slide(e){showImg(indexValue += e);}
+         function showImg(e){
+           var i;
+           const img = document.querySelectorAll('img');
+           const slider = document.querySelectorAll('.btm-slides span');
+           if(e > img.length){indexValue = 1}
+           if(e < 1){indexValue = img.length}
+           for(i = 0; i < img.length; i++){
+             img[i].style.display = "none";
+           }
+           for(i = 0; i < slider.length; i++){
+             slider[i].style.background = "rgba(255,255,255,0.1)";
+           }
+           img[indexValue-1].style.display = "block";
+           slider[indexValue-1].style.background = "white";
+         }
+      </script>
+
              <div class="clock">
       <div class="display">
           </div>

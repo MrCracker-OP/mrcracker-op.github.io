@@ -56,7 +56,6 @@ body{
   background: #131419;
   height: 120px;
   width: 200px;
-  line-height: 120px;
   text-align: center;
   overflow:hidden;
   padding: 0 30px;
@@ -64,8 +63,8 @@ body{
                3px 3px 5px rgba(0,0,0,0.5);
 }
 .clock .display{
-  font-size: 30px;
+  font-size: 20px;
   color: cyan;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   font-family: 'Orbitron', sans-serif;
 }

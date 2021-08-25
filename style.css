@@ -1,18 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html,body{
+  height: 100%;
 }
-html,body{ 
-  margin: 0;
-  padding: 0;
-	width:100%;
-	height:100vh;
-}
-	background:url(https://telegra.ph/file/a7853aadec2065b0205ea.jpg);
-  background-repeat:round;
-  background-attachment: fixed;
+bodybackground-colour: #121127
 }
 
 .image{

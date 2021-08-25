@@ -58,6 +58,7 @@ body{
   width: 200px;
   line-height: 120px;
   text-align: center;
+  overflow:hidden;
   padding: 0 30px;
   box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
                3px 3px 5px rgba(0,0,0,0.5);

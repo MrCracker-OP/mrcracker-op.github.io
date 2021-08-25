@@ -21,7 +21,10 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
 
-
+.fix{
+  width:200px;
+  height:120px;
+}
 
 .image{
   cursor: pointer;

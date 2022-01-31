@@ -32,7 +32,7 @@ body{
 .dmode{
     --primary: black;
     --secondary: #fff;
-    --bg: url("templates/lbg.jpg");
+    --bg: url("templates/pbg.jpg");
     --icons: #c4c4c4;
     --i-hover: #4facfe;
     --menu:#4facfe;
